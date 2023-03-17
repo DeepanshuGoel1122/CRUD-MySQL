@@ -1,0 +1,42 @@
+Open mysql workbench
+login o localhost root
+create schema named "crudschema"
+create table
+add one entry in table
+
+now come to our project folder, make two folders client and backend
+cd backend
+(initialize node app) npm init -y 
+now we have package.json file
+
+now we will install libraries
+npm i express mysql nodemon
+
+now create main file "index.js" in backend folder, here we create our express application
+to start node app - node index.js
+we got an error because we cannot use import statement like this, ES6 module...
+To use this, in package.json under main, type - "type": "module",
+
+to use nodemon, come to package.json, inside scripts, "start": "nodemon index.js",
+now we can use npm start
+
+we got mysql error, so npm install mysql2 , this will work
+
+now we can create books from app and get books and creatr books from body(postman).
+
+now come to client folder to make all functionality with react app..
+
+npx create-react-app .
+nmp i react-router-dom
+
+books, update, add pages have been created 
+
+npm i axios ( to fetch data from backend )
+
+use axios in books.jsx , 
+we will get CROS error, our backend server is not allowing an application to use our backend api..
+we will install cors library in backend folder
+npm i cors
+
+now we hav link the add the book button to add /page, now work on it
+ 

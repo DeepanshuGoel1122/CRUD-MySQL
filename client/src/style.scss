@@ -1,0 +1,97 @@
+.app {
+  height: 100vh;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: azure;
+
+  .addHome {
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: rgb(250, 88, 88);
+  }
+
+  .box{
+    background-color: rgb(206, 218, 216);
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 50%;
+    gap: 30px;
+
+    .book {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px;
+      gap: 10px;
+      padding: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      border-radius: 15px;
+      background-color: rgb(236, 236, 218);
+
+      img {
+        width: 200px;
+        height: 280px;
+        object-fit: cover;
+      }
+
+      button {
+        padding: 3px 6px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .delete {
+        border: 1px solid rgb(245, 191, 191);
+        color: rgb(242, 100, 100);
+      }
+      .update {
+        border: 1px solid rgb(204, 204, 243);
+        color: rgb(139, 139, 234);
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      width: 250px;
+      padding: 10px;
+      border: 1px solid gray;
+    }
+
+    textarea {
+      padding: 10px;
+    }
+
+    button {
+      border: none;
+      padding: 10px;
+      background-color: white;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
